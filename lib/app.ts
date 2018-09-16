@@ -17,6 +17,8 @@ App.use(session({
 App.use(cookieparser());
 
 
-
+App.get('/',(req,res)=>{
+ res.status(200).send('helloworld');
+});
 
 export {App};
